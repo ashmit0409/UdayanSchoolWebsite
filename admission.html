@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udyayan International School</title>
+    <link rel="stylesheet" href="styleAdmission.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="Images/logo-modified.png"></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="admission.html">ADMISSION</a></li>
+                    <li><a href="#footer">CONTACT US</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>        
+    </section>
+
+    <section class="details">
+        <div class="Procedure">
+            <h1>Admission Procedure</h1>
+            <p><span style="color:crimson; font-weight: bold;">Welcome to Udayan International</span></p>
+            <ul>
+                <li>The registration forms are available in the office on all working days.</li>
+                <li>Admission/Registration form should be filled in and signed by the parents only.If neither of parents is alive nor presents,only the lawful guardian of the child is allowed to sign the form</li>
+                <li>Special attention must be paid while enterning the name and date of the child in the Registration form as subsequent change will not be permitted.</li>
+                <li>Admission shall be strictly given on merit after screening/interview/test.However the management reserves to itself the right of admission.</li>
+                <li>A child who has previously studied in any other school(other state)should submit the Countersigned Transfer Certificate and marks card.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="buttons-section">
+        <div class="buttons-container">
+            <button class="registration-button" onclick="openRegistrationForm()">Online Registration</button>
+            <button class="registration-button" onclick="redirectToFooter()">Contact Us</button>
+        </div>
+    </section>
+
+    <section class="salutation">
+        <div class="salutation">
+            <p>Warm Regards,</p>
+            <p>We wish you all the best!</p>
+            <p><span style="color:black; font-weight: bold;">UDAYAN INTERNATIONAL ORGANISATION</span></p>
+        </div>
+    </section>
+
+    <section class="footer" id="footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><i class="fas fa-phone"></i>Phone: 8860301759 , 9410718191</p>
+                <p><i class="fas fa-envelope"></i>Email: info@udayaninternational.in</p>
+                <p><i class="fas fa-map-marker-alt"></i>Address: Near Khatkna Bridge, Nagnath Ward <br> Distt- Champawat (Uttarakhand-262523)</p>
+            </div>
+            <div class="social-links">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100065418402676&mibextid=LQQJ4d"><i class="fab fa-facebook"></i>Facebook</a></li>
+                    <!-- <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li> -->
+                </ul>
+            </div>
+            <div class="feedback">
+                <h3>Feedback</h3>
+                <p><a href="https://forms.gle/F6nNq36pkgMj54gA8" target="_blank">Provide Feedback</a></p>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        // For Menu 
+        let navLinks = document.getElementById("nav-links");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+        //For Buttons
+        function openRegistrationForm() {
+            window.open('https://forms.gle/cqz4xAtnp9aN8iLL8', '_blank');
+        }
+        function redirectToFooter() {
+            document.getElementById('footer').scrollIntoView({ behavior: 'smooth' });
+        }
+        // function openAdmissionForm() {
+        //     window.open('YOUR_ADMISSION_FORM_URL_HERE', '_blank');
+        // }
+        
+    </script>
+</body>
